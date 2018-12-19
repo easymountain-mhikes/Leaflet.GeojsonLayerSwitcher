@@ -123,4 +123,4 @@ Note : style and styleSelected support PolylineDecorator. Just provide the `patt
 
 ## License
 
-MIT © [Easy-Mountain](https://github.com/easy-mountain)
+MIT © [Easy-Mountain](https://github.com/easymountain)
