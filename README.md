@@ -13,7 +13,7 @@ $ npm install --save leaflet-geojson-layer-switcher
 ### browser
 
 - Download or clone this github project
-- Include `dist/leaflet-geojson-layer-switcher.min.js` and `dist/leaflet-geojson-layer-switcher.min.css` in your project
+- Include `dist/Leaflet.GeojsonLayerSwitcher.min.js` and `dist/Leaflet.GeojsonLayerSwitcher.min.css` in your project
 
 ### compile
 
