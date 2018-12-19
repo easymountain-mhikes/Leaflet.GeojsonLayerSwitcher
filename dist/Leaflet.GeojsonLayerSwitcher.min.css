@@ -1,0 +1,17 @@
+a.leaflet-geoJSONLayerSwitcher {
+    color: white;
+    background-color: #26a69a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 40px;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 1.2em;
+    margin: 2px;
+}
+

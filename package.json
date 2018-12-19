@@ -1,0 +1,41 @@
+{
+  "name": "Leaflet.GeojsonLayerSwitcher",
+  "version": "1.0.0",
+  "description": "Allows to navigate between GeoJSON layers, select some, and return selection.",
+  "main": "src/Leaflet.GeojsonLayerSwitcher.js",
+  "scripts": {
+    "start": "brunch watch",
+    "build": "brunch build -p",
+    "prepublish": "brunch build -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher"
+  },
+  "keywords": [
+    "leaflet",
+    "geoJSON",
+    "layer",
+    "switcher",
+    "toggle",
+    "select"
+  ],
+  "author": "Easy-Mountain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher/issues"
+  },
+  "homepage": "https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher#readme",
+  "devDependencies": {
+    "babel-brunch": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "brunch": "^2.10.17",
+    "uglify-js-brunch": "^2.10.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "leaflet": "^1.0.0",
+    "leaflet-dialog": "^1.0.5",
+    "font-awesome": "^4.7.0"
+  }
+}
