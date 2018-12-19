@@ -1,4 +1,4 @@
-# leaflet-geojson-layer-switcher [![NPM version](https://badge.fury.io/js/leaflet-geojson-layer-switcher.svg)](https://npmjs.org/package/leaflet-geojson-layer-switcher) [![Build Status](https://api.travis-ci.org/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher.svg?branch=master)](https://travis-ci.org/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher)
+# Leaflet.GeojsonLayerSwitcher [![NPM version](https://badge.fury.io/js/leaflet-geojson-layer-switcher.svg)](https://npmjs.org/package/leaflet-geojson-layer-switcher) [![Build Status](https://api.travis-ci.org/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher.svg?branch=master)](https://travis-ci.org/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher)
 
 This plugin is intended to be used for Polyline selection. Navigates between layers and switches the selection state.
 
