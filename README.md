@@ -40,12 +40,12 @@ Don't forget to link the CSS file.
 ### non-es6 include
 
 ```html
-<link rel="stylesheet" href="leaflet-geojson-layer-switcher.min.css" />
-<script src="leaflet-geojson-layer-switcher.min.js"></script>
+<link rel="stylesheet" href="Leaflet.GeojsonLayerSwitcher.min.css" />
+<script src="Leaflet.GeojsonLayerSwitcher.min.js"></script>
 ```
 
 ```js
-require('leaflet-geojson-layer-switcher.js').default(L);
+require('Leaflet.GeojsonLayerSwitcher.min.js').default(L);
 ```
 
 ### Interaction
