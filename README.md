@@ -45,7 +45,7 @@ Don't forget to link the CSS file.
 ```
 
 ```js
-require('Leaflet.GeojsonLayerSwitcher.min.js').default(L);
+require('js/Leaflet.GeojsonLayerSwitcher.js').default(L);
 ```
 
 ### Interaction
