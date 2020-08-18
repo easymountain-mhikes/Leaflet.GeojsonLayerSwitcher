@@ -99,8 +99,11 @@ export default function(L) {
 			this._prevButton = L.DomUtil.create('a', 'leaflet-geoJSONLayerSwitcher prev', navBar);
 			L.DomUtil.create('i', 'fa fa-chevron-left', this._prevButton);
 
-			this._switchButton = L.DomUtil.create('a', 'leaflet-geoJSONLayerSwitcher switch', navBar);
-			this._switchButtonIcon = L.DomUtil.create('i', 'fa', this._switchButton);
+			this._switchLabel = L.DomUtil.create('label', 'switch', navBar);
+			this._switchButton = L.DomUtil.create('input', '', this._switchLabel);
+			this._switchButton.setAttribute('type', 'checkbox');
+
+			L.DomUtil.create('span', 'slider round', this._switchLabel);
 
 			this._nextButton = L.DomUtil.create('a', 'leaflet-geoJSONLayerSwitcher next', navBar);
 			L.DomUtil.create('i', 'fa fa-chevron-right', this._nextButton);
@@ -181,15 +184,7 @@ export default function(L) {
 		},
 
 		_updateToggleButtonFor: function(layer) {
-			if (layer.feature.properties[this.options.propertyStateSelected]) {
-				this._switchButtonIcon.classList.remove(this.options.selectButton.icon);
-				this._switchButtonIcon.classList.add(this.options.deselectButton.icon);
-				this._switchButton.style.backgroundColor = this.options.deselectButton.bgColor;
-			} else {
-				this._switchButtonIcon.classList.remove(this.options.deselectButton.icon);
-				this._switchButtonIcon.classList.add(this.options.selectButton.icon);
-				this._switchButton.style.backgroundColor = this.options.selectButton.bgColor;
-			}
+			this._switchButton.checked = layer.feature.properties[this.options.propertyStateSelected] === false;
 		},
 
 		_focus: function(layer) {
