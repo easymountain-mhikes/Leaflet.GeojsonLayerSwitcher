@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher#readme",
   "devDependencies": {
-    "babel-brunch": "^7.0.0",
+    "babel-brunch": "^7.0.1",
     "babel-preset-env": "^1.7.0",
-    "brunch": "^2.10.17",
+    "brunch": "^4.0.0",
     "uglify-js-brunch": "^2.10.0"
   },
   "dependencies": {},
