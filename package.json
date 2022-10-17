@@ -1,12 +1,12 @@
 {
   "name": "leaflet-geojson-layer-switcher",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Allows to navigate between GeoJSON layers, select some, and return selection.",
   "main": "src/js/Leaflet.GeojsonLayerSwitcher.js",
   "scripts": {
-    "start": "brunch watch",
-    "build": "brunch build -p",
-    "prepublish": "brunch build -p"
+    "start": "npx brunch watch",
+    "build": "npx brunch build -p",
+    "prepublish": "npx brunch build -p"
   },
   "repository": {
     "type": "git",
@@ -30,12 +30,12 @@
     "babel-brunch": "^7.0.1",
     "babel-preset-env": "^1.7.0",
     "brunch": "^4.0.0",
+    "standard-version": "^9.5.0",
     "uglify-js-brunch": "^2.10.0"
   },
-  "dependencies": {},
   "peerDependencies": {
+    "font-awesome": "^4.7.0",
     "leaflet": "^1.0.0",
-    "leaflet-dialog": "^1.0.5",
-    "font-awesome": "^4.7.0"
+    "leaflet-dialog": "^1.0.5"
   }
 }
