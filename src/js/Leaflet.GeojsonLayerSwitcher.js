@@ -33,6 +33,7 @@ export default function(L) {
 				initOpen: false,
 				size: [300, 160],
 				anchor: context.options.popupAnchor,
+				position: 'topright',
 			});
 
 			this._geoJSONLayer = L.geoJson(null, {
