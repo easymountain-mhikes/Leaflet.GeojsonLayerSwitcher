@@ -118,6 +118,7 @@ handler.disable();
 - selectButton `<Object>` : Customize how the selection button should appear. `icon` is the name of a font-awesome class, which defaults to `'fa-plus'`. `bgColor` allows you to change the default green.
 - deselectButton `<Object>` : Customize how the de-selection button should appear. `icon` defaults to `'fa-minus'` and `gColor` defaults to red.
 - popupAnchor `<Array>` : Allows you to change Leaflet.Dialog anchor. Defaults to `[10, 60]`.
+- position `<String>` : Allows you to change Leaflet.Dialog position. Defaults to `topright`.
 
 Note : style and styleSelected support PolylineDecorator. Just provide the `patterns` key any configuration needed from PolylineDecorator.
 
