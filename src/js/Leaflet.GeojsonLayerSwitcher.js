@@ -18,7 +18,6 @@ export default function(L) {
 		},
 
 		initialize: function(map, options) {
-			console.log('initialize');
 			L.Handler.prototype.initialize.call(this, map);
 			L.Util.setOptions(this, options || {});
 
