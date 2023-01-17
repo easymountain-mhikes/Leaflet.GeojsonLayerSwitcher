@@ -1,6 +1,6 @@
 {
   "name": "leaflet-geojson-layer-switcher",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Allows to navigate between GeoJSON layers, select some, and return selection.",
   "main": "src/js/Leaflet.GeojsonLayerSwitcher.js",
   "scripts": {
