@@ -12,18 +12,13 @@ export default function(L) {
 			propertyStateSelected: 'selected',
 			style: Object.assign({color: '#f00'}, commonStyle),
 			styleSelected: Object.assign({color: '#0f0'}, commonStyle),
-			selectButton: {
-				icon: 'fa-plus',
-				bgColor: '#4caf50'
-			},
-			deselectButton: {
-				icon: 'fa-minus',
-				bgColor: '#f00'
-			},
 			popupAnchor: [10, 60],
+			position: 'topright',
+			completeButton: false,
 		},
 
 		initialize: function(map, options) {
+			console.log('initialize');
 			L.Handler.prototype.initialize.call(this, map);
 			L.Util.setOptions(this, options || {});
 
@@ -33,7 +28,7 @@ export default function(L) {
 				initOpen: false,
 				size: [300, 160],
 				anchor: context.options.popupAnchor,
-				position: context.options.position || 'topright',
+				position: context.options.position,
 			});
 
 			this._geoJSONLayer = L.geoJson(null, {
@@ -58,7 +53,13 @@ export default function(L) {
 		_getStyleFor: function(feature) {
 			return (feature.properties && feature.properties[this.options.propertyStateSelected]) ? this.options.styleSelected : this.options.style;
 		},
+		addHooks: function() {
+			L.DomEvent.on(document, 'eventname', this._doSomething, this);
+		},
 
+		removeHooks: function() {
+			L.DomEvent.off(document, 'eventname', this._doSomething, this);
+		},
 		addHooks: function() {
 			this._geoJSONLayer.addTo(this._map);
 			this._dialog.addTo(this._map);
@@ -92,6 +93,7 @@ export default function(L) {
 		},
 
 		_initDialogContent: function() {
+			console.log('_initDialogContent');
 			let container = L.DomUtil.create('div');
 
 			this._navTitle = L.DomUtil.create('h4', 'leaflet-geoJSONLayerSwitcher-title', container);
@@ -118,6 +120,18 @@ export default function(L) {
 			L.DomEvent.on(this._nextButton, 'click', function() {
 				context._next();
 			}, this);
+
+			if (this.options.completeButton) {
+				this._completeButton = L.DomUtil.create('a', 'leaflet-geoJSONLayerSwitcher complete', navBar);
+				L.DomUtil.create('i', 'fa fa-check', this._completeButton);
+
+				L.DomEvent.on(this._completeButton, 'click', function(event) {
+					context._map.fire('layerSwitcher.complete', {
+						originalEvent: event,
+						layers: context.getSelection(),
+					});
+				}, this);
+			}
 
 			L.DomEvent.on(this._switchButton, 'click', function() {
 				context._toggle();

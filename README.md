@@ -115,8 +115,7 @@ handler.disable();
 - propertyStateSelected `<String>` : The feature's property name containing a boolean defining wether the layer is selected. If feature does not have this property, it will be initialized to `false`. Default property is `'selected'`.
 - style `<Object>` : Customize style applied to polylines which are not selected. Default is dashed and red.
 - styleSelected `<Object>` : Customize style applied to selected polylines. Default is dashed and green.
-- selectButton `<Object>` : Customize how the selection button should appear. `icon` is the name of a font-awesome class, which defaults to `'fa-plus'`. `bgColor` allows you to change the default green.
-- deselectButton `<Object>` : Customize how the de-selection button should appear. `icon` defaults to `'fa-minus'` and `gColor` defaults to red.
+- completeButton `<Boolean>` : Add a complete button in the popup. When clicked, it will trigger a `layerSwitcher.complete` map event container the selected layers
 - popupAnchor `<Array>` : Allows you to change Leaflet.Dialog anchor. Defaults to `[10, 60]`.
 - position `<String>` : Allows you to change Leaflet.Dialog position. Defaults to `topright`.
 
