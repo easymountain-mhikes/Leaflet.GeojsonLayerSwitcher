@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher/compare/v1.0.10...v1.1.0) (2023-01-17)
+
+
+### Features
+
+* add an optional complete button and event ([2e0fa85](https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher/commit/2e0fa852422099b6dff8b401f435b4afe70e6c3c))
+
 ### [1.0.10](https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher/compare/v1.0.8...v1.0.10) (2023-01-17)
 
 ### [1.0.9](https://github.com/EASYMOUNTAIN/Leaflet.GeojsonLayerSwitcher/compare/v1.0.8...v1.0.9) (2023-01-17)
