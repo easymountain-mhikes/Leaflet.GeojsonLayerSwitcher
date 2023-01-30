@@ -92,7 +92,6 @@ export default function(L) {
 		},
 
 		_initDialogContent: function() {
-			console.log('_initDialogContent');
 			let container = L.DomUtil.create('div');
 
 			this._navTitle = L.DomUtil.create('h4', 'leaflet-geoJSONLayerSwitcher-title', container);
